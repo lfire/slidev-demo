@@ -49,6 +49,58 @@ The last comment block of each slide will be treated as slide notes. It will be 
 -->
 
 ---
+layout: two-cols
+layoutClass: gap-10
+---
+
+# Test Video
+
+Test left side
+
+<img src="/assets/test-qp-12-40.gif" />
+
+::right::
+
+Test right side
+
+<video controls>
+  <source src="/assets/videos/test-gc-19-28.mp4" type="video/mp4">
+</video>
+
+边界良好的补全生成
+
+<style>
+  .col-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  video {
+    margin-top: 100px;
+  }
+</style>
+
+---
+layout: iframe
+
+# the web page source
+url: https://time.graphics/embed?v=0.6&id=899851
+---
+
+# Test Iframe
+
+---
+
+# Test embed
+
+<iframe width="100%" height="400" src="https://time.graphics/embed?v=1&id=899851" frameborder="0" allowfullscreen></iframe>
+
+---
+layout: iframe
+url: https://doc.weixin.qq.com/sheet/e3_AL8ACAapAAs5zVWb0l3RqSFl63YHR?scode=AJEAIQdfAAoJmy1F3dAL8ACAapAAs&tab=90fsya
+---
+
+---
 transition: fade-out
 ---
 
@@ -101,20 +153,22 @@ Hover on the bottom-left corner to see the navigation's controls panel, [learn m
 
 ## Keyboard Shortcuts
 
-|     |     |
-| --- | --- |
-| <kbd>right</kbd> / <kbd>space</kbd>| next animation or slide |
-| <kbd>left</kbd>  / <kbd>shift</kbd><kbd>space</kbd> | previous animation or slide |
-| <kbd>up</kbd> | previous slide |
-| <kbd>down</kbd> | next slide |
+|                                                    |                             |
+| -------------------------------------------------- | --------------------------- |
+| <kbd>right</kbd> / <kbd>space</kbd>                | next animation or slide     |
+| <kbd>left</kbd> / <kbd>shift</kbd><kbd>space</kbd> | previous animation or slide |
+| <kbd>up</kbd>                                      | previous slide              |
+| <kbd>down</kbd>                                    | next slide                  |
 
 <!-- https://sli.dev/guide/animations.html#click-animations -->
+
 <img
   v-click
   class="absolute -bottom-9 -left-7 w-80 opacity-50"
   src="https://sli.dev/assets/arrow-bottom-left.svg"
   alt=""
 />
+
 <p v-after class="absolute bottom-23 left-45 opacity-30 transform -rotate-10">Here!</p>
 
 <!--
@@ -154,20 +208,22 @@ Use code snippets and get the highlighting directly, and even types hover![^1]
 // and errors in markdown code blocks
 // More at https://shiki.style/packages/twoslash
 
-import { computed, ref } from 'vue'
+import { computed, ref } from "vue";
 
-const count = ref(0)
-const doubled = computed(() => count.value * 2)
+const count = ref(0);
+const doubled = computed(() => count.value * 2);
 
-doubled.value = 2
+doubled.value = 2;
 ```
 
 <arrow v-click="[4, 5]" x1="350" y1="310" x2="195" y2="334" color="#953" width="2" arrowSize="1" />
 
 <!-- This allow you to embed external code blocks -->
+
 <<< @/snippets/external.ts#snippet
 
 <!-- Footer -->
+
 [^1]: [Learn More](https://sli.dev/guide/syntax.html#line-highlighting)
 
 <!-- Inline style -->
@@ -207,13 +263,13 @@ Add multiple code blocks and wrap them with <code>````md magic-move</code> (four
 ```ts {*|2|*}
 // step 1
 const author = reactive({
-  name: 'John Doe',
+  name: "John Doe",
   books: [
-    'Vue 2 - Advanced Guide',
-    'Vue 3 - Basic Guide',
-    'Vue 4 - The Mystery'
-  ]
-})
+    "Vue 2 - Advanced Guide",
+    "Vue 3 - Basic Guide",
+    "Vue 4 - The Mystery",
+  ],
+});
 ```
 
 ```ts {*|1-2|3-4|3-4,8}
@@ -222,16 +278,16 @@ export default {
   data() {
     return {
       author: {
-        name: 'John Doe',
+        name: "John Doe",
         books: [
-          'Vue 2 - Advanced Guide',
-          'Vue 3 - Basic Guide',
-          'Vue 4 - The Mystery'
-        ]
-      }
-    }
-  }
-}
+          "Vue 2 - Advanced Guide",
+          "Vue 3 - Basic Guide",
+          "Vue 4 - The Mystery",
+        ],
+      },
+    };
+  },
+};
 ```
 
 ```ts
@@ -239,15 +295,15 @@ export default {
 export default {
   data: () => ({
     author: {
-      name: 'John Doe',
+      name: "John Doe",
       books: [
-        'Vue 2 - Advanced Guide',
-        'Vue 3 - Basic Guide',
-        'Vue 4 - The Mystery'
-      ]
-    }
-  })
-}
+        "Vue 2 - Advanced Guide",
+        "Vue 3 - Basic Guide",
+        "Vue 4 - The Mystery",
+      ],
+    },
+  }),
+};
 ```
 
 Non-code blocks are ignored.
@@ -256,13 +312,13 @@ Non-code blocks are ignored.
 <!-- step 4 -->
 <script setup>
 const author = {
-  name: 'John Doe',
+  name: "John Doe",
   books: [
-    'Vue 2 - Advanced Guide',
-    'Vue 3 - Basic Guide',
-    'Vue 4 - The Mystery'
-  ]
-}
+    "Vue 2 - Advanced Guide",
+    "Vue 3 - Basic Guide",
+    "Vue 4 - The Mystery",
+  ],
+};
 </script>
 ```
 ````
@@ -386,12 +442,7 @@ preload: false
 Motion animations are powered by [@vueuse/motion](https://motion.vueuse.org/), triggered by `v-motion` directive.
 
 ```html
-<div
-  v-motion
-  :initial="{ x: -80 }"
-  :enter="{ x: 0 }">
-  Slidev
-</div>
+<div v-motion :initial="{ x: -80 }" :enter="{ x: 0 }">Slidev</div>
 ```
 
 <div class="w-60 relative mt-6">
@@ -467,7 +518,9 @@ LaTeX is supported out-of-box powered by [KaTeX](https://katex.org/).
 Inline $\sqrt{3x-1}+(1+x)^2$
 
 Block
-$$ {1|3|all}
+
+$$
+{1|3|all}
 \begin{array}{c}
 
 \nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t} &
@@ -576,23 +629,48 @@ Slidev provides built-in Moanco Editor support.
 Add `{monaco}` to the code block to turn it into an editor:
 
 ```ts {monaco}
-import { ref } from 'vue'
-import hello from './external'
+import { ref } from "vue";
+import hello from "./external";
 
-const code = ref('const a = 1')
-hello()
+const code = ref("const a = 1");
+hello();
 ```
 
 Use `{monaco-run}` to create an editor that can execute the code directly in the slide:
 
 ```ts {monaco-run}
 function fibonacci(n: number): number {
-  return n <= 1
-    ? n
-    : fibonacci(n - 1) + fibonacci(n - 2) // you know, this is NOT the best way to do it :P
+  return n <= 1 ? n : fibonacci(n - 1) + fibonacci(n - 2); // you know, this is NOT the best way to do it :P
 }
 
-console.log(Array.from({ length: 10 }, (_, i) => fibonacci(i + 1)))
+console.log(Array.from({ length: 10 }, (_, i) => fibonacci(i + 1)));
+```
+
+---
+
+# Diff Viewer
+
+```ts {monaco-diff} { editorOptions: { lineNumbers: 'on', renderSideBySide: true, useInlineViewWhenSpaceIsLimited: false, readOnly: true } }
+export const qsConfig: qs.IParseOptions = {
+  allowDots: true,
+  depth: 5,
+  parameterLimit: 1000,
+  arrayLimit: 1000,
+  parseArrays: true,
+  plainObjects: true,
+  strictNullHandling: true,
+  ignoreQueryPrefix: true,
+};
+~~~
+export const qsConfig: qs.IParseOptions = {
+  parameterLimit: 1000,
+  arrayLimit: 1000,
+  allowDots: true,
+  parseArrays: true,
+  depth: 5,
+  plainObjects: true,
+  strictNullHandling: true
+};
 ```
 
 ---
