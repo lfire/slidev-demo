@@ -4,8 +4,8 @@ theme: seriph
 # random image from a curated Unsplash collection by Anthony
 # like them? see https://unsplash.com/collections/94734566/slidev
 # background: https://cover.sli.dev
-# background: /assets/bg/_f439bcb2-6acf-40cc-a79c-79a089635b76.jpeg
-background: /assets/bg/_966fd0c7-591b-499e-b472-5cdfad5eed4d.jpeg
+# background: /public/bg/_f439bcb2-6acf-40cc-a79c-79a089635b76.jpeg
+background: /public/bg/_966fd0c7-591b-499e-b472-5cdfad5eed4d.jpeg
 # some information about your slides, markdown enabled
 title: take flight with AI大模型
 # apply any unocss classes to the current slide
@@ -42,7 +42,7 @@ hideInToc: true
 ---
 hideInToc: true
 layout: image-right
-image: /assets/img/bg-toc.png
+image: /public/bg/bg-toc.png
 ---
 
 # 目录

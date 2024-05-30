@@ -3,7 +3,7 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "build": "slidev build ai.md",
+    "build": "slidev build ai.md --base ./ --out ./docs",
     "dev": "slidev ai --open",
     "export": "slidev export ai.md",
     "ppt": "slidev export ai.md --format pptx"
