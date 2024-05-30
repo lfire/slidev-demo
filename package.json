@@ -3,10 +3,11 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "build": "slidev build ai.md",
-    "dev": "slidev ai --open",
-    "export": "slidev export ai.md",
-    "ppt": "slidev export ai.md --format pptx"
+    "build": "./build.sh",
+    "build-cli": "slidev build",
+    "dev": "slidev ai.md --open",
+    "export": "slidev export ai.md slides.md",
+    "ppt": "slidev export ai.md slides.md --format pptx"
   },
   "dependencies": {
     "@slidev/cli": "^0.49.5",

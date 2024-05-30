@@ -5,7 +5,7 @@ theme: seriph
 # like them? see https://unsplash.com/collections/94734566/slidev
 # background: https://cover.sli.dev
 # background: /bg/_f439bcb2-6acf-40cc-a79c-79a089635b76.jpeg
-background: /bg/_966fd0c7-591b-499e-b472-5cdfad5eed4d.jpeg
+background: ./bg/_966fd0c7-591b-499e-b472-5cdfad5eed4d.jpeg
 # some information about your slides, markdown enabled
 title: take flight with AI大模型
 # apply any unocss classes to the current slide
@@ -21,6 +21,8 @@ transition: slide-left
 mdc: true
 canvasWidth: 1200
 hideInToc: true
+exportFilename: "flight-ai"
+routerMode: history
 ---
 
 <div class="pt-28"></div>
@@ -42,7 +44,7 @@ hideInToc: true
 ---
 hideInToc: true
 layout: image-right
-image: /bg/bg-toc.png
+image: ./bg/bg-toc.png
 ---
 
 # 目录
