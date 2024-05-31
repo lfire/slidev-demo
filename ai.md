@@ -22,7 +22,7 @@ mdc: true
 canvasWidth: 1200
 hideInToc: true
 exportFilename: "flight-ai"
-routerMode: history
+routerMode: hash
 ---
 
 <div class="pt-28"></div>
