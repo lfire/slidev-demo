@@ -21,6 +21,7 @@ transition: slide-left
 mdc: true
 canvasWidth: 1200
 hideInToc: true
+colorSchema: dark
 exportFilename: "flight-ai"
 routerMode: hash
 ---

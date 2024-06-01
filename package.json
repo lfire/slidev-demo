@@ -6,11 +6,12 @@
     "build": "./build.sh",
     "build-cli": "slidev build",
     "dev": "slidev ai.md --open",
+    "format": "slidev format ai.md",
     "export": "slidev export ai.md slides.md",
     "ppt": "slidev export ai.md slides.md --format pptx"
   },
   "dependencies": {
-    "@slidev/cli": "^0.49.5",
+    "@slidev/cli": "^0.49.9",
     "@slidev/theme-default": "latest",
     "@slidev/theme-seriph": "latest",
     "vue": "^3.4.21"
