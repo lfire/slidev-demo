@@ -202,9 +202,11 @@ layoutClass: gap-6
 
 # 可能的实现代码
 
-```vue {*|18-28|31-43|1-16}{maxHeight:'550px'}
+<!-- prettier-ignore-start -->
+
+```vue {*|18-28|30-42|1-16}{maxHeight:'550px'}
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref } from "vue";
 
 const props = defineProps({
   count: {
@@ -214,10 +216,10 @@ const props = defineProps({
     type: Boolean,
     default: false,
   },
-})
+});
 
-const counter = ref(props.count)
-const isFocus = ref(props.focus)
+const counter = ref(props.count);
+const isFocus = ref(props.focus);
 </script>
 
 <template>
@@ -231,7 +233,6 @@ const isFocus = ref(props.focus)
     </button>
   </div>
 </template>
-
 
 <style scoped>
 /* 针对Chrome、Edge和Safari */
@@ -248,6 +249,8 @@ input[type="number"] {
 </style>
 ```
 
+<!-- prettier-ignore-end -->
+
 ---
 
 <div class="flex items-stretch justify-around">
@@ -255,6 +258,7 @@ input[type="number"] {
 
 # 一种headless方案实现
 
+<!-- prettier-ignore-start -->
 ```vue
 <script setup lang="ts">
 import {
@@ -281,6 +285,7 @@ import { Icon } from "@iconify/vue";
   </NumberFieldRoot>
 </template>
 ```
+<!-- prettier-ignore-end -->
 
 <!-- ./components/NumberInputHl.vue -->
 <NumberInputHl class="float-left mt-2" />
@@ -291,6 +296,7 @@ import { Icon } from "@iconify/vue";
 
 # &nbsp;
 
+<!-- prettier-ignore-start -->
 ```vue {*}
 <script setup lang="ts">
 import { NumberFieldDecrement, NumberFieldIncrement,
@@ -317,6 +323,7 @@ import { Icon } from "@iconify/vue";
   </NumberFieldRoot>
 </template>
 ```
+<!-- prettier-ignore-end -->
 
 <!-- ./components/NumberInput.vue -->
 <NumberInput class="float-left mt-2" />
@@ -347,6 +354,7 @@ https://risingstars.js.org/2023/en
 <div class="mt-10"></div>
 
 https://www.shadcn-vue.com/docs/introduction.html#-why-not-packaged-as-a-dependency-
+
 > The idea behind this is to give you ownership and control over the code, allowing you to decide how the components are built and styled.
 >
 > Start with some sensible defaults, then customize the components to your needs.
