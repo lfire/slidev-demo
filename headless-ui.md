@@ -202,8 +202,9 @@ layoutClass: gap-6
 
 # 可能的实现代码
 
-<!-- prettier-ignore-start -->
+<div>
 
+<!-- prettier-ignore-start -->
 ```vue {*|18-28|30-42|1-16}{maxHeight:'550px'}
 <script setup lang="ts">
 import { ref } from "vue";
@@ -248,8 +249,9 @@ input[type="number"] {
 }
 </style>
 ```
-
 <!-- prettier-ignore-end -->
+
+</div>
 
 ---
 
