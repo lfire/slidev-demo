@@ -1,5 +1,6 @@
 {
   "yaml.schemas": {
     "https://json.schemastore.org/github-workflow.json": "file:///Users/benji/Documents/benji/github/slidev-demo/.github/workflows/deploy.yml"
-  }
+  },
+  "slidev.include": ["**/slides.md", "ai.md", "headless-ui.md"]
 }

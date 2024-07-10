@@ -59,7 +59,7 @@ image: ./bg/bg-toc.png
 <iframe width="100%" height="500" src="https://time.graphics/embed?v=1&id=899851" frameborder="0" allowfullscreen></iframe>
 
 <div class="abs-bl left-3.5rem bottom-5">
-数据来源：<a href="https://time.graphics/line/899851">https://time.graphics/line/899851</a>
+  数据来源：<a href="https://time.graphics/line/899851">https://time.graphics/line/899851</a>
 </div>
 
 <div class="abs-br right-3.5rem bottom-5">{{ $page }}</div>
@@ -69,35 +69,32 @@ image: ./bg/bg-toc.png
 # 使用GitHub Copilot的目的&收益
 
 <div grid="~ cols-2 gap-2" m="t-2">
+  <!-- ![purposese](/assets/img/purposes.png) -->
+  <img src="/assets/img/purposes.png" alt="purposes" style="width: 100%; height: 100%;"/>
+  <!-- ![benefits](/assets/img/benefits.png) -->
+  <img src="/assets/img/benefits.png" alt="benefits" style="width: 100%; height: auto; margin-top: -3px;"/>
 
-<!-- ![purposese](/assets/img/purposes.png) -->
-<img src="/assets/img/purposes.png" alt="purposes" style="width: 100%; height: 100%;"/>
+  <div class="ml-6" v-click>
+    <h4>最主要的目的：</h4>
+    <ul>
+      <li>帮助<span v-mark.circle.orange="3">代码生成</span></li>
+      <li>尝试Copilot的功能</li>
+      <li>修复bug</li>
+    </ul>
+  </div>
 
-<!-- ![benefits](/assets/img/benefits.png) -->
-<img src="/assets/img/benefits.png" alt="benefits" style="width: 100%; height: auto; margin-top: -3px;"/>
-
-<div class="ml-6" v-click>
-<h4>最主要的目的：</h4>
-<ul>
-  <li>帮助<span v-mark.circle.orange="3">代码生成</span></li>
-  <li>尝试Copilot的功能</li>
-  <li>修复bug</li>
-</ul>
-</div>
-
-<div class="ml-6" v-click>
-<h4>最主要的收益：</h4>
-<ul>
-  <li>有用的<span v-mark.circle.orange="3">代码生成</span></li>
-  <li>更快的开发</li>
-  <li>更好的代码质量</li>
-</ul>
-</div>
-
+  <div class="ml-6" v-click>
+    <h4>最主要的收益：</h4>
+    <ul>
+      <li>有用的<span v-mark.circle.orange="3">代码生成</span></li>
+      <li>更快的开发</li>
+      <li>更好的代码质量</li>
+    </ul>
+  </div>
 </div>
 
 <div class="abs-bl left-3.5rem bottom-5">
-参考论文：<a href="https://arxiv.org/pdf/2309.05687.pdf">https://arxiv.org/pdf/2309.05687.pdf</a>
+  参考论文：<a href="https://arxiv.org/pdf/2309.05687.pdf">https://arxiv.org/pdf/2309.05687.pdf</a>
 </div>
 
 <div class="abs-br right-3.5rem bottom-5">{{ $page }}</div>
@@ -107,23 +104,18 @@ image: ./bg/bg-toc.png
 # AI工具在编码效率上的数据体现
 
 <div class="grid grid-cols-[3fr_2fr] gap-6" m="t-2">
-
-<img src="/assets/img/github-per.png" style="width: 100%; height: 100%;"/>
-
-<img src="/assets/img/ai-char-per.png" style="width: 100%; height: 100%;"/>
-
-<div>
-在GitHub Copilot官网上，其宣传中的广告文案有提到，Copilot可以帮助用户提升55%的编码效率。
-</div>
-
-<div>
-近期有进行过一次评测实验，以上是实验过程中，各个工具在代码采纳率上的表现。
-</div>
-
+  <img src="/assets/img/github-per.png" style="width: 100%; height: 100%;"/>
+  <img src="/assets/img/ai-char-per.png" style="width: 100%; height: 100%;"/>
+  <div>
+    在GitHub Copilot官网上，其宣传中的广告文案有提到，Copilot可以帮助用户提升55%的编码效率。
+  </div>
+  <div>
+    近期有进行过一次评测实验，以上是实验过程中，各个工具在代码采纳率上的表现。
+  </div>
 </div>
 
 <div class="abs-bl left-3.5rem bottom-5">
-评测报告：<a href="https://iwiki.woa.com/p/4009688124">https://iwiki.woa.com/p/4009688124</a>
+  评测报告：<a href="https://iwiki.woa.com/p/4009688124">https://iwiki.woa.com/p/4009688124</a>
 </div>
 
 <div class="abs-br right-3.5rem bottom-5">{{ $page }}</div>
@@ -149,7 +141,7 @@ image: ./bg/bg-toc.png
 2. 实验case侧，同一case由同一实验人员使用不同工具进行评测，保持人员因素的一致性；
 
 <div class="abs-bl left-3.5rem bottom-5">
-数据详情：<a href="https://doc.weixin.qq.com/sheet/e3_AL8ACAapAAs5zVWb0l3RqSFl63YHR?scode=AJEAIQdfAAoJmy1F3dAL8ACAapAAs">https://doc.weixin.qq.com/sheet/e3_AL8ACAapAAs5zVWb0l3RqSFl63YHR?scode=AJEAIQdfAAoJmy1F3dAL8ACAapAAs</a>
+  数据详情：<a href="https://doc.weixin.qq.com/sheet/e3_AL8ACAapAAs5zVWb0l3RqSFl63YHR?scode=AJEAIQdfAAoJmy1F3dAL8ACAapAAs">https://doc.weixin.qq.com/sheet/e3_AL8ACAapAAs5zVWb0l3RqSFl63YHR?scode=AJEAIQdfAAoJmy1F3dAL8ACAapAAs</a>
 </div>
 
 </v-click>
@@ -166,17 +158,15 @@ AI工具使用过程中，一部分人认为AI工具是【辅助】，另一部�
 | 通义灵码（ty） | <span v-mark.circle.red="1">4.44</span> |      8707       |   645    |         59.37%          | <span v-mark.circle.red="1">51.82%</span> |         56.69%          | <span v-mark.circle.red="1">51.25%</span> |
 
 <v-click>
-
 从数据表现上看，通义灵码的表现是：推荐频次最高，次数采纳率和采纳字符率则是倒数第二，如何理解这一数据表现。
 
 其实从实测者角度反馈来说，其表现代表的是，通义灵码有很高的推荐次数，且几乎是一直不停的推荐，但推荐结果对于开发者而言，可采用程度不高，因此整体导致采纳率表现靠后。
 
 这一倒挂的数据表现，其实代表的是，推荐结果不优。
-
 </v-click>
 
 <v-click>
-<h3 class="text-red-500">📝 推荐频次与采纳率之间数据倒挂存在一个临界范围，如果突破这一范围，AI插件的补全行为，不但不会给开发者带来帮助，反而会影响开发者的编码节奏及思路，从而成为干扰。</h3>
+  <h3 class="text-red-500">📝 推荐频次与采纳率之间数据倒挂存在一个临界范围，如果突破这一范围，AI插件的补全行为，不但不会给开发者带来帮助，反而会影响开发者的编码节奏及思路，从而成为干扰。</h3>
 </v-click>
 
 <div class="abs-br right-3.5rem bottom-5">{{ $page }}</div>
@@ -187,18 +177,19 @@ AI工具使用过程中，一部分人认为AI工具是【辅助】，另一部�
 
 <div class="grid grid-cols-[3fr_2fr] gap-6" m="t-2">
 
-<div>
-<video controls>
-  <source src="/assets/videos/test-gc-19-28.mp4" type="video/mp4">
-</video>
+  <div>
+    <video controls>
+      <source src="/assets/videos/test-gc-19-28.mp4" type="video/mp4" />
+    </video>
 
-<p>边界良好的补全生成</p>
-<ol>
-<li>先生成函数体的注释</li>
-<li>再生成函数体</li>
-</ol>
+    <p>边界良好的补全生成</p>
 
-</div>
+    <ol>
+      <li>先生成函数体的注释</li>
+      <li>再生成函数体</li>
+    </ol>
+
+  </div>
 
 ````md magic-move
 ```js {*|1-5|6-23|7,14,21|*}
@@ -231,7 +222,7 @@ checkDocid(adType) {
 </div>
 
 <div class="abs-bl left-3.5rem bottom-5">
-录屏（19:25）：<a href="https://drive.weixin.qq.com/s?k=AJEAIQdfAAot9hXjpTAL8ACAapAAs">https://drive.weixin.qq.com/s?k=AJEAIQdfAAot9hXjpTAL8ACAapAAs</a>
+  录屏（19:25）：<a href="https://drive.weixin.qq.com/s?k=AJEAIQdfAAot9hXjpTAL8ACAapAAs">https://drive.weixin.qq.com/s?k=AJEAIQdfAAot9hXjpTAL8ACAapAAs</a>
 </div>
 
 <div class="abs-br right-3.5rem bottom-5">{{ $page }}</div>
@@ -241,17 +232,15 @@ checkDocid(adType) {
 # 优秀的代码补全协同技能：注释先行
 
 <div class="grid grid-cols-[3fr_4fr] gap-6" m="t-2">
+  <div>
+    <img src="/assets/img/code-comment-2.png" style="width: 100%; height: auto;"/>
+    <p>在页面上方对整体文件的逻辑进行注释说明，这将给AI提供一个全局知识背景。</p>
+  </div>
 
-<div>
-<img src="/assets/img/code-comment-2.png" style="width: 100%; height: auto;"/>
-<p>在页面上方对整体文件的逻辑进行注释说明，这将给AI提供一个全局知识背景。</p>
-</div>
-
-<div>
-<img src="/assets/img/code-comment-1.png" style="width: 100%; height: auto;"/>
-<p>实现的函数体内部，会有清晰的注释说明，并分步骤的给出相应段的注释，从注释的结构上，就有一个非常清晰的整理。</p>
-</div>
-
+  <div>
+    <img src="/assets/img/code-comment-1.png" style="width: 100%; height: auto;"/>
+    <p>实现的函数体内部，会有清晰的注释说明，并分步骤的给出相应段的注释，从注释的结构上，就有一个非常清晰的整理。</p>
+  </div>
 </div>
 
 <div class="abs-br right-3.5rem bottom-5">{{ $page }}</div>
@@ -264,9 +253,9 @@ checkDocid(adType) {
 
 <div>
 
-<video controls m="b-10px">
-  <source src="/assets/videos/test-gc-12-12.mp4" type="video/mp4">
-</video>
+  <video controls m="b-10px">
+    <source src="/assets/videos/test-gc-12-12.mp4" type="video/mp4"/>
+  </video>
 
 ```js {*|4-5,9-11,14-16,19-21}{maxHeight:'275px'}
 /**
@@ -422,22 +411,18 @@ checkAdTag(adType) {
 
 <div class="grid grid-cols-[1fr_1fr] gap-6" m="t-2">
 
-<video controls>
-  <source src="/assets/videos/test-gf-23-00.mp4" type="video/mp4">
-</video>
+  <video controls>
+    <source src="/assets/videos/test-gf-23-00.mp4" type="video/mp4">
+  </video>
 
-<video controls>
-  <source src="/assets/videos/test-tc-21-00.mp4" type="video/mp4">
-</video>
+  <video controls>
+    <source src="/assets/videos/test-tc-21-00.mp4" type="video/mp4">
+  </video>
 
-<p>其中的返回逻辑段，在后向代码中已实现，补全的结果中不应再次包含。</p>
-
-<p>同样出现重复的返回逻辑段。</p>
-
-<p>工蜂录屏（23:00）：<a href="https://drive.weixin.qq.com/s?k=AJEAIQdfAAonyqWesEAL8ACAapAAs">https://drive.weixin.qq.com/s?k=AJEAIQdfAAonyqWesEAL8ACAapAAs</a></p>
-
-<p>腾讯云AI助手录屏（21:00）：<a href="https://drive.weixin.qq.com/s?k=AJEAIQdfAAo8ppmXQGAL8ACAapAAs">https://drive.weixin.qq.com/s?k=AJEAIQdfAAo8ppmXQGAL8ACAapAAs</a></p>
-
+  <p>其中的返回逻辑段，在后向代码中已实现，补全的结果中不应再次包含。</p>
+  <p>同样出现重复的返回逻辑段。</p>
+  <p>工蜂录屏（23:00）：<a href="https://drive.weixin.qq.com/s?k=AJEAIQdfAAonyqWesEAL8ACAapAAs">https://drive.weixin.qq.com/s?k=AJEAIQdfAAonyqWesEAL8ACAapAAs</a></p>
+  <p>腾讯云AI助手录屏（21:00）：<a href="https://drive.weixin.qq.com/s?k=AJEAIQdfAAo8ppmXQGAL8ACAapAAs">https://drive.weixin.qq.com/s?k=AJEAIQdfAAo8ppmXQGAL8ACAapAAs</a></p>
 </div>
 
 <div class="abs-br right-3.5rem bottom-5">{{ $page }}</div>
@@ -491,15 +476,10 @@ hideInToc: true
 # 补充：AI辅助代码解读对比
 
 <div class="grid grid-cols-[80fr_70fr] gap-6" m="t-2">
-
-<img src="/assets/img/read-code-tc.png" style="width: auto; height: auto;"/>
-
-<img src="/assets/img/read-code-gf.png" style="width: auto; height: auto;"/>
-
-GitHub Copilot在代码解读上，对于代码的理解能力，当前实验的case表现上，还是有更好一些的表现，交互上也更为合理。
-
-工蜂的代码解读功能，从当前的测试case来看，其表现上，还有一定的提升空间，交互上也可以向多轮对话，以及与编辑器中代码交互的方向靠拢。
-
+  <img src="/assets/img/read-code-tc.png" style="width: auto; height: auto;"/>
+  <img src="/assets/img/read-code-gf.png" style="width: auto; height: auto;"/>
+  <p>GitHub Copilot在代码解读上，对于代码的理解能力，当前实验的case表现上，还是有更好一些的表现，交互上也更为合理。</p>
+  <p>工蜂的代码解读功能，从当前的测试case来看，其表现上，还有一定的提升空间，交互上也可以向多轮对话，以及与编辑器中代码交互的方向靠拢。</p>
 </div>
 
 <div class="abs-br right-3.5rem bottom-5">{{ $page }}</div>
@@ -548,23 +528,23 @@ review会因各自工程的规范，而产生差异，无法全面的能用
 <div class="grid grid-cols-[9fr_10fr] gap-6" m="t-2">
 
 <div>
-<img src="/assets/img/ai-work-flow.png" style="width: 100%; height: auto;"/>
-<img src="/assets/img/code-with-prompt.png" style="width: 100%; height: auto;"/>
+  <img src="/assets/img/ai-work-flow.png" style="width: 100%; height: auto;"/>
+  <img src="/assets/img/code-with-prompt.png" style="width: 100%; height: auto;"/>
 </div>
 
 <div>
-<img src="/assets/img/experiment-scheme.png" style="width: 100%; height: auto;"/>
-<img src="/assets/img/count-data.png" style="width: 100%; height: auto;"/>
+  <img src="/assets/img/experiment-scheme.png" style="width: 100%; height: auto;"/>
+  <img src="/assets/img/count-data.png" style="width: 100%; height: auto;"/>
 
-<blockquote m="t-5">
-<p>The best method for reducing the number of insecure solutions was the <span v-mark.underline.red="1">scenario-specific method</span>, decreasing the number of insecure samples by <span v-mark.circle.orange="1">16%</span>.</p>
-</blockquote>
+  <blockquote m="t-5">
+    <p>The best method for reducing the number of insecure solutions was the <span v-mark.underline.red="1">scenario-specific method</span>, decreasing the number of insecure samples by <span v-mark.circle.orange="1">16%</span>.</p>
+  </blockquote>
 </div>
 
 </div>
 
 <div class="abs-bl left-3.5rem bottom-5">
-参考论文：<a href="https://arxiv.org/pdf/2403.12671.pdf">https://arxiv.org/pdf/2403.12671.pdf</a>
+  参考论文：<a href="https://arxiv.org/pdf/2403.12671.pdf">https://arxiv.org/pdf/2403.12671.pdf</a>
 </div>
 
 <div class="abs-br right-3.5rem bottom-5">{{ $page }}</div>
@@ -578,7 +558,7 @@ review会因各自工程的规范，而产生差异，无法全面的能用
 > 用户通过定义要实现的目标来启动流程，Conversation Manager初始化对话和设置，Agent Scheduler协调AI代理共同完成任务，并将它们的命令转发给Conversation Manager。Conversation Manager解析这些命令并调用Tools Library，该库提供可在存储库上执行的各种操作。代理的操作在安全的Docker环境中执行，并将输出返回给Conversation Manager，后者将其整合到正在进行的对话中。这个迭代过程持续进行，直到成功完成任务。
 
 <div class="abs-bl left-3.5rem bottom-5">
-参考论文：<a href="https://arxiv.org/pdf/2403.08299.pdf">https://arxiv.org/pdf/2403.08299.pdf</a>
+  参考论文：<a href="https://arxiv.org/pdf/2403.08299.pdf">https://arxiv.org/pdf/2403.08299.pdf</a>
 </div>
 
 <div class="abs-br right-3.5rem bottom-5">{{ $page }}</div>
