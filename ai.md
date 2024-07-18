@@ -181,13 +181,11 @@ AI工具使用过程中，一部分人认为AI工具是【辅助】，另一部�
     <video controls>
       <source src="/assets/videos/test-gc-19-28.mp4" type="video/mp4" />
     </video>
-
-    <p>边界良好的补全生成</p>
-
-    <ol>
-      <li>先生成函数体的注释</li>
-      <li>再生成函数体</li>
-    </ol>
+    <p> 边界良好的补全生成 </p>
+    <div>
+       1. 先生成函数体的注释
+       2. 再生成函数体
+    </div>
 
   </div>
 
